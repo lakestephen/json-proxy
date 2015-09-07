@@ -24,6 +24,7 @@ public class JsonBrokerTest {
 		UserService userService = broker.buildMessageInterface(UserService.class, (topic, value) -> {
 			log.info("Write json to Topic [{}], json {}{}", topic, System.lineSeparator(), value );
 		});
+		
 		userService.addUser("STEVE", 42);
 	}
 
