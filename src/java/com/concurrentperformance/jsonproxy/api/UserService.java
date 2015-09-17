@@ -1,5 +1,6 @@
 package com.concurrentperformance.jsonproxy.api;
 
+import com.concurrentperformance.jsonproxy.proxy.JsonDefaultInteger;
 import com.concurrentperformance.jsonproxy.proxy.JsonField;
 import com.concurrentperformance.jsonproxy.proxy.Topic;
 
@@ -12,7 +13,7 @@ import com.concurrentperformance.jsonproxy.proxy.Topic;
 public interface UserService {
 
 	default void addUser(@JsonField(key = "userName", mandatory = true) String userName,
-	             @JsonField(key = "age", mandatory = false) int age) {};
+	                    @JsonField(key = "age", mandatory = false) @JsonDefaultInteger(42) int age) {};
 
 	default void removeUser(@JsonField(key = "userName", mandatory = true) String userName) {};
 
