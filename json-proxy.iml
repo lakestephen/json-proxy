@@ -27,9 +27,20 @@
           <root url="jar://$IVY_CACHE_HOME$/cache/org.mockito/mockito-all/jars/mockito-all-1.9.0.jar!/" />
           <root url="jar://$IVY_CACHE_HOME$/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.5.jar!/" />
           <root url="jar://$IVY_CACHE_HOME$/cache/log4j/log4j/jars/log4j-1.2.16.jar!/" />
+          <root url="jar://$IVY_CACHE_HOME$/cache/com.google.code.gson/gson/jars/gson-2.3.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
       </library>
     </orderEntry>
   </component>

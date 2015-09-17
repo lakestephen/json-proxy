@@ -5,8 +5,8 @@ package com.concurrentperformance.jsonproxy.proxy;
  *
  * @author Lake
  */
-public interface Sender {
+public interface MessageSystem {
 
 
-	void send(String topic, Object send);
+	void send(String topic, String payload);
 }

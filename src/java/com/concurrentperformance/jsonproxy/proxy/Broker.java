@@ -1,4 +1,5 @@
 package com.concurrentperformance.jsonproxy.proxy;
+
 /**
  * TODO Comments
  *
@@ -6,5 +7,10 @@ package com.concurrentperformance.jsonproxy.proxy;
  */
 public interface Broker {
 
-	<T> T buildMessageInterface(Class<T> type, Sender sender);
+	<T> T buildMessageInterface(Class<T> type, MessageSystem messageSystem);
+
+	<T> void registerHandler(Class<T> type, T handler);
+
+	MessageSystem getMessageSystem();
+
 }

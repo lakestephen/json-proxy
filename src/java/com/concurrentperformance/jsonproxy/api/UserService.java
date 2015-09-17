@@ -11,6 +11,9 @@ import com.concurrentperformance.jsonproxy.proxy.Topic;
 @Topic(topic = "authentication")
 public interface UserService {
 
-	void addUser(@JsonField(key = "userName", mandatory = true) String userName,
-	             @JsonField(key = "age") int age);
+	default void addUser(@JsonField(key = "userName", mandatory = true) String userName,
+	             @JsonField(key = "age", mandatory = false) int age) {};
+
+	default void removeUser(@JsonField(key = "userName", mandatory = true) String userName) {};
+
 }
